@@ -33,8 +33,7 @@ function loadTranslations(lang) {
 }
 
 function updateContent() {
-  document.getElementById('title').innerText = translations.title;
-  document.getElementById('introduction').innerText = translations.introduction;
+  document.getElementById('tieudechinh').innerText = translations.tieudechinh;
   document.getElementById('noidung1').innerText = translations.noidung1;
   document.getElementById('noidung2').innerText = translations.noidung2;
   document.getElementById('noidung3').innerText = translations.noidung3;
@@ -45,7 +44,17 @@ function updateContent() {
   document.getElementById('noidung8').innerText = translations.noidung8;
   document.getElementById('noidung9').innerText = translations.noidung9;
   document.getElementById('noidung10').innerText = translations.noidung10;
+  document.getElementById('noidung11').innerText = translations.noidung11;
+  document.getElementById('noidung12').innerText = translations.noidung12;
+  document.getElementById('noidung13').innerText = translations.noidung13;
+  document.getElementById('noidung14').innerText = translations.noidung14;
+  document.getElementById('noidung15').innerText = translations.noidung15;
+  document.getElementById('noidung16').innerText = translations.noidung16;
   document.getElementById('footer').innerText = translations.footer;
+  document.getElementById('tieude1').innerText = translations.tieude1;
+  document.getElementById('tieude2').innerText = translations.tieude2;
+  document.getElementById('tieude3').innerText = translations.tieude3;
+
 }
 
 window.onload = () => {
