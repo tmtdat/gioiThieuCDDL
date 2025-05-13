@@ -1,0 +1,366 @@
+/* Reset CSS cơ bản */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html,
+  body {
+    height: 100%;
+    max-width: 1080px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  /* Navbar */
+  .navbar {
+    background: linear-gradient(90deg, #003366, #004080);
+    color: #fff;
+    padding: 10px 20px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Navbar top */
+  .navbar-top {
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Navbar bottom */
+  .navbar-bottom {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  /* Logo và tên trang */
+  .logo-container {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  
+  .logo-container img {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+  }
+  
+  .site-name {
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+  }
+  
+  /* Menu icon */
+  .menu-icon {
+    width: 30px;
+    height: 20px;
+    position: relative;
+    cursor: pointer;
+    display: none;
+    z-index: 1002; /* Đảm bảo dấu X trên nav-container */
+  }
+  
+  .menu-icon .bar {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background: #fff;
+    position: absolute;
+    left: 0;
+    transition: all 0.3s ease;
+  }
+  @media screen and (min-width: 769px) {
+  .nav-links .dropdown .dropdown-content {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+  }
+}
+
+/* Căn giữa và remove marker trên mobile */
+@media screen and (max-width: 768px) {
+  .nav-links .dropdown .dropdown-content {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+  }
+  .nav-links .dropdown .dropdown-content li {
+    padding: 12px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+  }
+  .nav-links .dropdown .dropdown-content li:last-child {
+    border-bottom: none;
+  }
+  .nav-links .dropdown .dropdown-content li a {
+    font-size: 16px;
+  }
+}
+  .menu-icon .bar:nth-child(1) {
+    top: 0;
+  }
+  
+  .menu-icon .bar:nth-child(2) {
+    top: 8px;
+  }
+  
+  .menu-icon .bar:nth-child(3) {
+    top: 16px;
+  }
+  
+  .menu-icon.active .bar:nth-child(1) {
+    transform: rotate(45deg);
+    top: 8px;
+  }
+  
+  .menu-icon.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .menu-icon.active .bar:nth-child(3) {
+    transform: rotate(-45deg);
+    top: 8px;
+  }
+  
+  /* Container cho nav-links */
+  .nav-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Menu điều hướng */
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    margin: 0;
+  }
+  
+  .nav-links li {
+    padding: 0 10px;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+  }
+  
+  .nav-links a:hover {
+    color: #ffcc00;
+  }
+  /* Dropdown cho menu "Khoa" */
+.nav-links .dropdown {
+  position: relative;
+}
+
+.nav-links .dropdown .dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #003366;
+  min-width: 160px;
+  z-index: 1003;
+  flex-direction: column;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+}
+
+.nav-links .dropdown .dropdown-content li {
+  padding: 8px 16px;
+  text-align: left;
+}
+
+.nav-links .dropdown .dropdown-content li a {
+  color: #fff;
+  display: block;
+}
+
+.nav-links .dropdown .dropdown-content li a:hover {
+  background-color: #004080;
+  color: #ffcc00;
+}
+
+/* Hiện submenu khi hover (cho desktop) */
+@media screen and (min-width: 769px) {
+  .nav-links .dropdown {
+    /* Giữ cho dropdown không đẩy layout */
+    position: relative;
+  }
+
+  .nav-links .dropdown .dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #003366;
+    min-width: 200px;            /* rộng hơn một chút */
+    padding: 8px 0;              /* khoảng cách trên/dưới */
+    border-radius: 4px;          /* bo góc mềm mại */
+    box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+    transition: opacity 0.2s ease;
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .nav-links .dropdown:hover .dropdown-content {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .nav-links .dropdown .dropdown-content li {
+    padding: 8px 16px;
+  }
+
+  .nav-links .dropdown .dropdown-content li + li {
+    margin-top: 4px;
+  }
+
+  .nav-links .dropdown .dropdown-content li a {
+    color: #fff;
+    font-size: 15px;
+  }
+}
+
+/* Hiện submenu khi click (cho mobile) */
+@media screen and (max-width: 768px) {
+  .nav-links .dropdown .dropdown-content {
+    position: static;
+    background-color: #003366;
+    box-shadow: none;
+  }
+
+  .nav-links .dropdown.active .dropdown-content {
+    display: block;
+  }
+}
+
+  /* Overlay */
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    z-index: 1000;
+    cursor: pointer;
+  }
+  
+  .overlay.active {
+    display: block;
+  }
+  
+  /* Footer */
+  .footer {
+    background: linear-gradient(90deg, #004080, #003366);
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    box-shadow: 0 -3px 10px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Responsive cho mobile */
+  @media screen and (max-width: 768px) {
+    .navbar {
+      padding: 10px 15px;
+    }
+  
+    .navbar-top {
+      justify-content: space-between;
+    }
+  
+    .menu-icon {
+      display: block;
+    }
+  
+    .nav-container {
+      display: none;
+      position: absolute;
+      top: 98px; /* Tăng để dưới menu-icon */
+      left: 50%;
+      transform: translateX(-50%);
+      width: 200px;
+      background: #003366;
+      padding: 10px 0;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+      z-index: 1001;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease-out;
+    }
+  
+    .nav-container.nav-active {
+      display: block;
+      max-height: 300px;
+    }
+  
+    .nav-links {
+      flex-direction: column;
+      margin: 0;
+    }
+  
+    .nav-links li {
+      padding: 10px 0;
+      text-align: center;
+    }
+  
+    .nav-links a {
+      font-size: 16px;
+      display: block;
+    }
+  
+    .nav-links a:hover {
+      background: #002244;
+    }
+  
+    .language-switch {
+      display: flex;
+    }
+  }
+  
+  @media screen and (min-width: 769px) {
+    .navbar-top {
+      justify-content: space-between;
+      flex-wrap: nowrap;
+    }
+  
+    .logo-container {
+      flex-shrink: 0;
+    }
+  
+    .nav-container {
+      display: flex;
+      flex-shrink: 0;
+    }
+  
+    .language-switch {
+      order: 1;
+      margin-left: 10px;
+      margin-right: 0;
+      flex-shrink: 0;
+    }
+  
+    .navbar-bottom {
+      display: none;
+    }
+  
+    .nav-links {
+      margin-right: 0;
+    }
+  
+    .nav-links li:first-child {
+      padding-left: 0;
+    }
+  }

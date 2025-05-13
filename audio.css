@@ -1,0 +1,36 @@
+.audio {
+    margin: 10px auto;
+    display: block;
+}
+
+  .btn-group .btn.active {
+    background-color: #0d6efd;
+    color: white;
+    font-weight: bold;
+  }
+
+
+.can {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+audio.audio{
+    color: aqua;
+}
+
+/* Desktop */
+
+@media (min-width: 768px) {
+    .audio {
+      width: 70%;
+    }
+  }
+
+  /* Mobile */
+  @media (max-width: 767px) {
+    .audio {
+      width: 85%;
+    }
+  }  
