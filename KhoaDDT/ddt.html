@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title id="title">Khoa Điện - Điện tử</title>
+    <script defer src="../script.js"></script>
+    <link rel="icon" type="logo" href="../img/logo.png" />
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="../gioithieu.css" />
+    <link rel="stylesheet" href="../audio.css" />
+    <link rel="stylesheet" href="../doiNgonNgu.css" />
+    <script defer src="../audio.js"></script>
+    <script fetch src="doiNgonNgu.js"></script>
+  </head>
+
+  <body>
+    <!-- Thanh menu -->
+    <nav class="navbar">
+      <div class="navbar-top">
+        <div class="logo-container">
+          <img src="../img/logo.png" alt="Logo" />
+          <span class="site-name">Cao đẳng Đắk Lắk</span>
+        </div>
+        <div class="language-switch">
+          <div class="switch-toggle" id="lang-toggle">
+            <span class="slider"></span>
+            <button class="lang-option" id="btn-vi" onclick="setLanguage('vi')" aria-label="Chuyển sang Tiếng Việt">
+              <img src="../img/covn.jpg" alt="VI" class="flag-icon" />
+              <span>VI</span>
+            </button>
+            <button class="lang-option" id="btn-en" onclick="setLanguage('en')" aria-label="Chuyển sang Tiếng Anh">
+              <img src="../img/coanh.png" alt="EN" class="flag-icon" />
+              <span>EN</span>
+            </button>
+          </div>
+        </div>
+        <div class="nav-container">
+          <ul class="nav-links" id="nav-links">
+            <li><a href="../index.html">Trang chủ</a></li>
+            <!-- <li><a href="#">Truyền thống</a></li> -->
+            <li class="dropdown">
+              <a href="#" class="dropbtn">Khoa</a>
+              <ul class="dropdown-content">
+                <li><a href="../KhoaCNTTKT/cntt1.html">CNTT-KT</a></li>
+                <li><a href="../KhoaCNOT/cnot.html">CNOT</a></li>
+                <li><a href="../KhoaCKXD/ckxd.html">CK-XD</a></li>
+                <li><a href="../KhoaNLTYTP/nltytp.html">N-L-TY-TP</a></li>
+                <li><a href="../KhoaSPHCXH/sphcxh.html">SP-HC-XH</a></li>
+                <li><a href="../KhoaDDT/ddt.html">Đ-ĐT</a></li>
+                
+                <!-- Thêm các khoa khác -->
+              </ul>
+            </li>
+            <li><a href="#">Thêm</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="navbar-bottom">
+        <div class="menu-icon" id="menu-icon">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </div>
+    </nav>
+    <div class="overlay"></div>
+    <!-- Audio Player -->
+
+    <section class="introduction">
+      <h1 class="tieude1" id="tieudechinh" data-i18n="introduction"></h1>
+    </section>
+
+    <div class="can">
+      <audio class="audio" controls controlsList="nodownload" oncontextmenu="return false;">
+        <source src="../audio/ddt.mp3" type="audio/mpeg" />
+        Trình duyệt không hỗ trợ audio.
+      </audio>
+    </div>
+<!-- Nội dung giới thiệu -->
+<section class="introduction">
+  <section>
+    <h2 style="margin-top: 25px;" id="tieude1"></h2>
+    
+    
+
+    <p class="noidung" id="noidung1"></p>
+    <p class="noidung" id="noidung2"></p>
+    
+    <div class="image-container">
+      <img src="img/anh1.JPG" alt="Ảnh Trường Cao đẳng" />
+      <div class="caption">Phòng thực hành</div>
+    </div>
+
+    <p class="noidung" id="noidung3"></p>
+    <p class="noidung" id="noidung4"></p>
+    
+    <div class="image-container">
+      <img src="img/anh3.JPG" alt="Ảnh Trường Cao đẳng" />
+      <div class="caption">phòng thực hành</div>
+    </div>
+
+    <p class="noidung" id="noidung5"></p>
+    <p class="noidung" id="noidung6"></p>
+    <p class="noidung" id="noidung7"></p>
+
+  </section>
+    <!-- Phần Footer -->
+    <footer class="footer">
+      <p style="color: white;" id="footer"></p>
+    </footer>
+  </body>
+</html>
