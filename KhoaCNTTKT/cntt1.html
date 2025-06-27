@@ -12,7 +12,51 @@
     <link rel="stylesheet" href="../doiNgonNgu.css" />
     <script defer src="../audio.js"></script>
     <script fetch src="doiNgonNgu.js"></script>
+  <link rel="stylesheet" href="../chatbot.css">
+
   </head>
+
+  <style>
+    #chatbot-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 50%;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+#chatbot-button img {
+  width: 40px;
+  height: 40px;
+}
+
+  </style> 
+
+<!-- Nút mở chatbot -->
+<div id="chatbot-button" onclick="toggleChatbot()">
+  <img src="../img/chatbot.png" alt="Chatbot" />
+</div>
+
+<!-- Khung chứa chatbot -->
+<div id="chatbot-container">
+  <iframe
+    src="https://www.chatbase.co/chatbot-iframe/9ErhC0dtDVzsFChSjZDym"
+    width="100%"
+    height="100%"
+    frameborder="0"
+    style="border: none;"
+    allow="clipboard-write; clipboard-read"
+  ></iframe>
+</div>
+
 
   <body>
     <!-- Thanh menu -->
@@ -112,4 +156,10 @@
       <p style="color: white;" id="footer"></p>
     </footer>
   </body>
+  <script>
+    function toggleChatbot() {
+      const chatbot = document.getElementById('chatbot-container');
+      chatbot.style.display = chatbot.style.display === 'block' ? 'none' : 'block';
+    }
+  </script>
 </html>
