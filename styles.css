@@ -254,7 +254,7 @@ html, body {
 
   .nav-container.nav-active {
     display: block;
-    max-height: 300px;
+    max-height: 500px;
   }
 
   .nav-links {
