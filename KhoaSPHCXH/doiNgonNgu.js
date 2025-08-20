@@ -53,7 +53,7 @@ function updateContent() {
   document.getElementById("footer-conductedTitle").innerText = translations.footer.conductedTitle;
   document.getElementById("footer-student1").innerText = translations.footer.student1;
   document.getElementById("footer-student2").innerText = translations.footer.student2;
-  document.getElementById("footer-student3").innerText = translations.footer.student3;   
+  document.getElementById("footer-student3").innerText = translations.footer.student3;
 }
 
 
@@ -61,3 +61,4 @@ window.onload = () => {
   setLanguage('vi');
 
 };
+
