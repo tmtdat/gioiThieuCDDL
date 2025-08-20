@@ -6,7 +6,15 @@
       "noidung3": "Chất lượng đội ngũ cán bộ quản lí và nhà giáo ngày một phát triển đáp ứng yêu cầu nhiệm vụ: hiện có 11 giảng viên, kỹ thuật viên (trong đó có 05 thạc sĩ, 03 đang học cao học và 03 cử nhân, kỹ sư). Là đội ngũ đạt chuẩn về chuyên môn (09 giảng viên đạt kỹ năng nghề, 02 đánh giá kỹ năng nghề CNTT Quốc gia bậc 1,2,3), có tinh thần đoàn kết, tận tụy với công việc và hết lòng vì học sinh, sinh viên thân yêu.",
       "noidung4": "Hàng năm khoa quản lí gần 100-200 HSSV chuyên ngành thuộc khoa và khoảng hơn 1000 HSSV học môn tin học qua ban các khoa khác trong toàn trường.",
       "noidung5": "Ngoài các hoạt động chuyên môn, tập thể cán bộ khoa luôn tích cực tham gia các hoạt động phong trào góp phần xây dựng thành tích và phát triển chung của nhà trường.",
-      "footer": "© 2025 Website NCKH. Đề tài ứng dụng công nghệ vào giới thiệu trường Cao đẳng Đắk Lắk.\n Được thực hiện bởi nhóm sinh viên"
+      "footer": {
+      "row1": "© 2025 Website NCKH. Đề tài nghiên cứu khoa học: Ứng dụng công nghệ trong truyền thông về trường Cao đẳng Đắk Lắk.",
+      "supervisorTitle": "Giáo viên hướng dẫn:",
+      "supervisorName": "ThS. Hoàng Nguyễn Minh Tuấn",
+      "conductedTitle": "Thực hiện bởi: Nhóm sinh viên",
+      "student1": "Sinh viên: Trương Minh Thành Đạt",
+      "student2": "Sinh viên: Vi Văn Bình",
+      "student3": "Học sinh: H'Hân Niê"
+    }
         },
         
     "en": {
@@ -16,6 +24,15 @@
       "noidung3": "Our management and teaching staff have continuously grown to meet mission requirements: we currently have 11 lecturers and technicians (5 holding master’s degrees, 3 pursuing master’s degrees, and 3 with bachelor’s or engineering qualifications). They meet professional standards (9 certified in IT vocational skills and 2 qualified to assess national IT vocational skill levels 1–3), share a spirit of unity and dedication, and are wholeheartedly committed to our students.",
       "noidung4": "Each year, the faculty oversees nearly 100–200 degree-seeking students within our majors and over 1,000 students from other faculties taking IT courses.",
       "noidung5": "Beyond academic duties, our faculty actively participates in extracurricular and community-building activities, contributing to the college’s achievements and overall development.",
-      "footer": "© 2025 NCKH Website. Technology Application Project: Introducing Dak Lak College. Implemented by the student team."
+      "footer": {
+      "row1": "© 2025 NCKH Website. Scientific Research Project: Application of Technology in Communication about Dak Lak College.",
+      "supervisorTitle": "Supervisor:",
+      "supervisorName": "MSc. Hoàng Nguyễn Minh Tuấn",
+      "conductedTitle": "Conducted by: Student Group",
+      "student1": "Student: Trương Minh Thành Đạt",
+      "student2": "Student: Vi Văn Bình",
+      "student3": "High School Student: H'Hân Niê"
     }
+    }
+
   }
