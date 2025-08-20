@@ -50,7 +50,14 @@ function updateContent() {
   document.getElementById('noidung14').innerText = translations.noidung14;
   document.getElementById('noidung15').innerText = translations.noidung15;
   document.getElementById('noidung16').innerText = translations.noidung16;
-  document.getElementById('footer').innerText = translations.footer;
+  document.getElementById("footer-row1").innerText = translations.footer.row1;
+  document.getElementById("footer-supervisorTitle").innerText = translations.footer.supervisorTitle;
+  document.getElementById("footer-supervisorName").innerText = translations.footer.supervisorName;
+  document.getElementById("footer-conductedTitle").innerText = translations.footer.conductedTitle;
+  document.getElementById("footer-student1").innerText = translations.footer.student1;
+  document.getElementById("footer-student2").innerText = translations.footer.student2;
+  document.getElementById("footer-student3").innerText = translations.footer.student3;                                           
+
   document.getElementById('tieude1').innerText = translations.tieude1;
   document.getElementById('tieude2').innerText = translations.tieude2;
   document.getElementById('tieude3').innerText = translations.tieude3;
@@ -60,4 +67,5 @@ function updateContent() {
 
 window.onload = () => {
   setLanguage('vi');
+
 };
