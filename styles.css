@@ -99,11 +99,20 @@ html, body {
   align-items: center;
 }
 
-.nav-links {
+/* Xóa dấu chấm tròn và khoảng đệm mặc định */
+.nav-links,
+.nav-links li,
+.nav-links ul {
   list-style: none;
-  display: flex;
-  gap: 10px;
   margin: 0;
+  padding: 0;
+}
+
+/* Menu ngang */
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 15px;
 }
 
 .nav-links li {
@@ -128,6 +137,7 @@ html, body {
   position: relative;
 }
 
+/* Fix căn đều trái dropdown + bỏ dấu chấm */
 .dropdown-content {
   display: none;
   position: absolute;
@@ -135,7 +145,9 @@ html, body {
   left: 0;
   background-color: #1a1f71;
   min-width: 200px;
-  padding: 8px 0;
+  padding: 0;
+  margin: 0;
+  list-style: none;
   border-radius: 4px;
   box-shadow: 0 8px 16px rgba(0,0,0,0.2);
   z-index: 1003;
@@ -151,13 +163,19 @@ html, body {
 }
 
 .dropdown-content li {
-  padding: 8px 16px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .dropdown-content li a {
+  display: block;
+  padding: 10px 16px;
+  width: 100%;
+  text-align: left;
   color: #fff;
   font-size: 15px;
-  display: block;
+  text-decoration: none;
   transition: background 0.25s ease, color 0.25s ease;
 }
 
@@ -180,18 +198,19 @@ html, body {
     visibility: visible;
   }
 
-  .nav-links .dropdown .dropdown-content li {
+  .dropdown-content li {
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-    padding: 12px 0;
     text-align: center;
   }
 
-  .nav-links .dropdown .dropdown-content li:last-child {
+  .dropdown-content li:last-child {
     border-bottom: none;
   }
 
-  .nav-links .dropdown .dropdown-content li a {
+  .dropdown-content li a {
     font-size: 16px;
+    padding: 1px;
+    text-align: center;
   }
 }
 
@@ -214,13 +233,35 @@ html, body {
 
 /* ========== FOOTER ========== */
 .footer {
-  background: linear-gradient(90deg, #2979ff, #1a1f71);
+  background: linear-gradient(81deg, #111e35, #32367b);
   color: #fff;
-  text-align: center;
   padding: 20px;
   font-size: 14px;
   box-shadow: 0 -3px 10px rgba(0, 0, 0, 0.15);
 }
+
+/* Hàng 1 */
+.footer-row1 {
+  text-align: center;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+/* Hàng 2 chia 2 cột */
+.footer-row2 {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; /* Đảm bảo hiển thị đẹp trên mobile */
+  text-align: left;
+}
+
+.footer-col {
+  flex: 1;
+  min-width: 250px; /* Khi màn hình nhỏ sẽ xuống dòng */
+  padding: 10px;
+}
+
+
 
 /* ========== RESPONSIVE ========== */
 @media screen and (max-width: 768px) {
