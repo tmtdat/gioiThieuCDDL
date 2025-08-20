@@ -57,7 +57,6 @@ function updateContent() {
   document.getElementById("footer-student1").innerText = translations.footer.student1;
   document.getElementById("footer-student2").innerText = translations.footer.student2;
   document.getElementById("footer-student3").innerText = translations.footer.student3;                                           
-
   document.getElementById('tieude1').innerText = translations.tieude1;
   document.getElementById('tieude2').innerText = translations.tieude2;
   document.getElementById('tieude3').innerText = translations.tieude3;
@@ -69,3 +68,4 @@ window.onload = () => {
   setLanguage('vi');
 
 };
+
