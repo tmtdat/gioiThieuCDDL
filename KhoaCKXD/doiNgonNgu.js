@@ -46,10 +46,17 @@ function updateContent() {
   document.getElementById('tieude2').innerHTML = formatContent(translations.tieude2);
   document.getElementById('noidung3').innerHTML = formatContent(translations.noidung3);
   document.getElementById('noidung4').innerHTML = formatContent(translations.noidung4);
-  document.getElementById('footer').innerHTML = formatContent(translations.footer);
+  document.getElementById("footer-row1").innerText = translations.footer.row1;
+  document.getElementById("footer-supervisorTitle").innerText = translations.footer.supervisorTitle;
+  document.getElementById("footer-supervisorName").innerText = translations.footer.supervisorName;
+  document.getElementById("footer-conductedTitle").innerText = translations.footer.conductedTitle;
+  document.getElementById("footer-student1").innerText = translations.footer.student1;
+  document.getElementById("footer-student2").innerText = translations.footer.student2;
+  document.getElementById("footer-student3").innerText = translations.footer.student3;   
 }
 
 
 window.onload = () => {
   setLanguage('vi');
+
 };
