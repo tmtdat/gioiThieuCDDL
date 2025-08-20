@@ -43,9 +43,6 @@ function updateContent() {
   document.getElementById('tieudechinh').innerHTML = formatContent(translations.tieudechinh);
   document.getElementById('noidung1').innerHTML = formatContent(translations.noidung1);
   document.getElementById('noidung2').innerHTML = formatContent(translations.noidung2);
-  document.getElementById('noidung3').innerHTML = formatContent(translations.noidung3);
-  document.getElementById('noidung4').innerHTML = formatContent(translations.noidung4);
-  document.getElementById('noidung5').innerHTML = formatContent(translations.noidung5);
   
   document.getElementById("footer-row1").innerText = translations.footer.row1;
   document.getElementById("footer-supervisorTitle").innerText = translations.footer.supervisorTitle;
@@ -61,4 +58,5 @@ window.onload = () => {
   setLanguage('vi');
 
 };
+
 
